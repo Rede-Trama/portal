@@ -8,12 +8,12 @@
 
   <style>
     :root {
-      --azul: #14213d;
-      --lilas: #8f6ccf;
-      --pink: #d9579b;
-      --dourado: #c9a34e;
-      --claro: #f8f7fb;
-      --texto: #2d2d2d;
+      --azul: #143642;
+      --lilas: #a97ad7;
+      --pink: #e83e7f;
+      --dourado: #c7a24b;
+      --claro: #f8f6f3;
+      --texto: #263238;
       --branco: #ffffff;
     }
 
@@ -75,8 +75,8 @@
       background:
         linear-gradient(
           120deg,
-          rgba(20,33,61,.96),
-          rgba(143,108,207,.80)
+          rgba(20,54,66,.97),
+          rgba(169,122,215,.82)
         );
       color: var(--branco);
     }
@@ -94,7 +94,7 @@
     .hero .subtitulo {
       font-size: clamp(1.2rem, 2.5vw, 1.8rem);
       margin-bottom: 18px;
-      color: #f4e9ff;
+      color: #f5eaff;
     }
 
     .hero p {
@@ -143,39 +143,68 @@
     }
 
     section .intro {
-      max-width: 760px;
+      max-width: 820px;
       margin-bottom: 35px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 24px;
-    }
-
-    .card {
-      background: var(--branco);
-      border-radius: 18px;
-      padding: 28px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.07);
-      border-top: 5px solid var(--lilas);
-    }
-
-    .card:nth-child(2) {
-      border-top-color: var(--pink);
-    }
-
-    .card:nth-child(3) {
-      border-top-color: var(--dourado);
-    }
-
-    .card h3 {
-      color: var(--azul);
-      margin-bottom: 10px;
     }
 
     .destaque {
       background: var(--branco);
+    }
+
+    .eixos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+    }
+
+    .eixo {
+      background: var(--branco);
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.07);
+      border-top: 6px solid var(--pink);
+    }
+
+    .eixo:nth-child(2) {
+      border-top-color: var(--lilas);
+    }
+
+    .eixo:nth-child(3) {
+      border-top-color: #21899c;
+    }
+
+    .eixo:nth-child(4) {
+      border-top-color: var(--pink);
+    }
+
+    .eixo:nth-child(5) {
+      border-top-color: var(--dourado);
+    }
+
+    .numero {
+      display: block;
+      font-size: 1.7rem;
+      font-weight: bold;
+      color: var(--pink);
+      margin-bottom: 8px;
+    }
+
+    .eixo:nth-child(2) .numero {
+      color: var(--lilas);
+    }
+
+    .eixo:nth-child(3) .numero {
+      color: #21899c;
+    }
+
+    .eixo:nth-child(5) .numero {
+      color: var(--dourado);
+    }
+
+    .eixo h3 {
+      color: var(--azul);
+      font-size: 1.5rem;
+      margin-bottom: 12px;
     }
 
     .chamadas {
@@ -203,7 +232,7 @@
     }
 
     footer {
-      background: #0d172b;
+      background: #0d2630;
       color: var(--branco);
       padding: 45px 8%;
     }
@@ -213,7 +242,7 @@
     }
 
     footer a {
-      color: #e5d4ff;
+      color: #eadcff;
       text-decoration: none;
     }
 
@@ -256,7 +285,7 @@
 
     <nav>
       <a href="#sobre">A TRAMA</a>
-      <a href="#pilares">Pilares</a>
+      <a href="#eixos">Eixos</a>
       <a href="#catalogo">Catálogo</a>
       <a href="#transparencia">Transparência</a>
       <a href="#contato">Contato</a>
@@ -274,8 +303,8 @@
         </div>
 
         <p>
-          Uma rede construída para transformar conhecimento,
-          criatividade e apoio em caminhos de autonomia.
+          Uma rede que conecta capacitação, criação, organização,
+          comunicação e parcerias para fortalecer caminhos de autonomia.
         </p>
 
         <div class="botoes">
@@ -296,44 +325,66 @@
 
       <p class="intro">
         A Rede TRAMA nasce do encontro entre pessoas, conhecimento,
-        criatividade e redes de apoio. Nosso propósito é criar
-        oportunidades para que habilidades possam se transformar
-        em autonomia, geração de renda e novos caminhos.
+        criatividade e redes de apoio. O projeto busca transformar
+        aprendizagem e produção artesanal em oportunidades de autonomia,
+        geração de renda, presença digital e fortalecimento de vínculos.
       </p>
     </section>
 
 
-    <section id="pilares" class="destaque">
-      <h2>Como tecemos essa rede</h2>
+    <section id="eixos" class="destaque">
+      <h2>Eixos de atuação</h2>
 
       <p class="intro">
-        A TRAMA articula formação, organização e comunicação para
-        fortalecer trajetórias e ampliar possibilidades.
+        A atuação da Rede TRAMA é organizada em cinco eixos que acompanham
+        as participantes desde a formação inicial até a ampliação de suas
+        redes de apoio e possibilidades de autonomia.
       </p>
 
-      <div class="cards">
+      <div class="eixos">
 
-        <div class="card">
+        <div class="eixo">
+          <span class="numero">01</span>
           <h3>Capacitar</h3>
           <p>
-            Desenvolvimento de conhecimentos técnicos e criativos,
-            permitindo que novas habilidades se tornem possibilidades reais.
+            Desenvolver habilidades para criação de joias artesanais,
+            explorando técnicas, estilos, preferências e teoria das cores.
           </p>
         </div>
 
-        <div class="card">
+        <div class="eixo">
+          <span class="numero">02</span>
+          <h3>Criar</h3>
+          <p>
+            Oferecer mentoria e matéria-prima para o desenvolvimento
+            das primeiras peças e de uma exposição apoiada pelo IFPR.
+          </p>
+        </div>
+
+        <div class="eixo">
+          <span class="numero">03</span>
           <h3>Controlar</h3>
           <p>
-            Organização de materiais, custos, produção e planejamento
-            para apoiar decisões e fortalecer a autonomia.
+            Ensinar organização financeira, registro de custos
+            e precificação das peças.
           </p>
         </div>
 
-        <div class="card">
+        <div class="eixo">
+          <span class="numero">04</span>
           <h3>Comunicar</h3>
           <p>
-            Construção de presença, identidade e canais que deem
-            visibilidade às histórias, aos produtos e às pessoas da rede.
+            Apoiar a criação da presença digital, divulgação dos produtos
+            e planejamento de marketing.
+          </p>
+        </div>
+
+        <div class="eixo">
+          <span class="numero">05</span>
+          <h3>Compartilhar</h3>
+          <p>
+            Ampliar o alcance da iniciativa por meio da divulgação,
+            indicação de participantes e formação de novas parcerias.
           </p>
         </div>
 
@@ -358,7 +409,6 @@
 
           <a href="#">Em breve →</a>
         </div>
-
 
         <div id="transparencia" class="chamada">
           <h3>Transparência</h3>
